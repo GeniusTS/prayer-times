@@ -25,7 +25,7 @@ This project was inspired from [batoulapps/Adhan](https://github.com/batoulapps/
     $times = $prayer->times('2017-5-9');
     $times->setTimeZone(+3);
 
-	echo $times->fajr->format('h:i a');
+    echo $times->fajr->format('h:i a');
 ```
 
 
