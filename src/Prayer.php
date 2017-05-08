@@ -202,7 +202,7 @@ class Prayer
      *
      * @param int $mathhab
      */
-    public static function setDeafultMathhab(int $mathhab)
+    public static function setDefaultMathhab(int $mathhab)
     {
         self::$defaul_mathab = self::checkMathhab($mathhab);
     }
