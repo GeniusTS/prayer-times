@@ -22,9 +22,8 @@ This project was inspired from [batoulapps/Adhan](https://github.com/batoulapps/
     $prayer->setCoordinates($longitude, $latitude);
 
     // Return an \GeniusTS\PrayerTimes\Times instance
-	$times = $prayer->times('2017-5-9');
-
-	$times->setTimeZone(+3);
+    $times = $prayer->times('2017-5-9');
+    $times->setTimeZone(+3);
 
 	echo $times->fajr->format('h:i a');
 ```
