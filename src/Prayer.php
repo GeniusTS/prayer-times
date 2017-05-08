@@ -348,12 +348,17 @@ class Prayer
     /**
      * get prayer times
      *
-     * @param \Carbon\Carbon $date
+     * @param mixed $date
      *
      * @return \GeniusTS\PrayerTimes\Times
      */
-    public function times(Carbon $date)
+    public function times($date)
     {
+        if (! $date instanceof Carbon)
+        {
+            $date = new Carbon($date);
+        }
+
         $this->calculateNightPortions();
 
         $solarTime = new SolarTime($date, $this->coordinates);
