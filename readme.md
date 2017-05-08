@@ -42,42 +42,42 @@ This project was inspired from [batoulapps/Adhan](https://github.com/batoulapps/
     $prayer->setMethod(Prayer::METHOD_MUSLIM_WORLD_LEAGUE);
 
     // change default value
-	Prayer::setDefaultMethod(new World);
-	// Or
-	Prayer::setDefaultMethod(Prayer::METHOD_MUSLIM_WORLD_LEAGUE);
+    Prayer::setDefaultMethod(new World);
+    // Or
+    Prayer::setDefaultMethod(Prayer::METHOD_MUSLIM_WORLD_LEAGUE);
 ```
 
 * Changing the mathhad of calculation Asr prayer.
 
 ```php
     //Change instance value
-	$prayer->setMathhab(Prayer::MATHHAB_HANAFI);
+    $prayer->setMathhab(Prayer::MATHHAB_HANAFI);
 
 
     //Change default value
-	Prayer::setDefaultMathhab(Prayer::MATHHAB_HANAFI);
+    Prayer::setDefaultMathhab(Prayer::MATHHAB_HANAFI);
 ```
 
 * Changing the high latitude rule.
 
 ```php
     //Change instance value
-	$prayer->setHighLatitudeRule(Prayer::HIGH_LATITUDE_MIDDLE_OF_NIGHT);
+    $prayer->setHighLatitudeRule(Prayer::HIGH_LATITUDE_MIDDLE_OF_NIGHT);
 
 
     //Change default value
-	Prayer::setDefaultHighLatitudeRule(Prayer::HIGH_LATITUDE_MIDDLE_OF_NIGHT);
+    Prayer::setDefaultHighLatitudeRule(Prayer::HIGH_LATITUDE_MIDDLE_OF_NIGHT);
 ```
 
 * Changing times adjustments.
 
 ```php
     //Change instance value
-	$prayer->setAdjustments(0, 2, 5, 3, 8, 4);
+    $prayer->setAdjustments(0, 2, 5, 3, 8, 4);
 
 
     //Change default value
-	Prayer::setDefaultAdjustments(0, 2, 5, 3, 8, 4);
+    Prayer::setDefaultAdjustments(0, 2, 5, 3, 8, 4);
 ```
 
 
