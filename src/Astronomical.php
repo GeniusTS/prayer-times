@@ -452,7 +452,7 @@ class Astronomical
      */
     public static function julianDate(Carbon $date)
     {
-        return static::julianDay($date->day, $date->month, $date->day);
+        return static::julianDay($date->year, $date->month, $date->day);
     }
 
     /**
