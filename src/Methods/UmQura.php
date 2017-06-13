@@ -22,7 +22,7 @@ class UmQura extends Method
     /**
      * @var float
      */
-    protected $interval = 90;
+    protected $interval = 120;
 
     /**
      * @var string
