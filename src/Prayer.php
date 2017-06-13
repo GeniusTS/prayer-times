@@ -478,9 +478,9 @@ class Prayer
      */
     protected function getTimeFromNumber($time)
     {
-        $hour = floor($time);
-        $minute = floor(($time - $hour) * 60);
-        $second = floor(($time - ($hour + $minute / 60)) * 60 * 60);
+        $hour = (int) floor($time);
+        $minute = (int) floor(($time - $hour) * 60);
+        $second = (int) floor(($time - ($hour + $minute / 60)) * 60 * 60);
 
         return (object) compact('hour', 'minute', 'second');
     }
