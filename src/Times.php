@@ -214,7 +214,7 @@ class Times
         {
             return null;
         }
-        elseif ($date->gte($this->magrib))
+        elseif ($date->gte($this->maghrib))
         {
             return static::TIME_ISHA;
         }
